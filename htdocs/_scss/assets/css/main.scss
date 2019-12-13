@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*
+* main.css
+*
+*/
+
+// Common Settings
+@import "_partials/foundation/reset";
+@import "_partials/foundation/fonts";
+@import "_partials/foundation/setting";
+@import "_partials/foundation/function";
+@import "_partials/foundation/mixin";
+@import "_partials/foundation/animation";
+@import "_partials/foundation/base";
+@import "_partials/layout/**";
+@import "_partials/object/component/**";
+@import "_partials/object/project/**";
+@import "_partials/object/utility/**";
+@import "_partials/days/**";
+
+// Print Settings
+@import "_partials/foundation/print";

@@ -1,0 +1,161 @@
+// -----------------------------
+//  @mixin
+//------------------------------
+
+@mixin mouseover-transparent($opacity: 0.3, $duration: 0.25s) {
+  transition: opacity $duration * 2;
+  cursor: pointer;
+  .no-touchevents &:hover {
+    transition: opacity $duration;
+    opacity: $opacity;
+  }
+}
+
+@mixin fadeIn($delay: 0s) {
+  opacity: 0;
+  &.is-active,
+  .is-active & {
+    transition: opacity 0.8s;
+    opacity: 1;
+    transition-delay: $delay;
+  }
+}
+
+@mixin fadeInBottom($delay: 0s) {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transform-origin: 50% 100%;
+  &.is-active,
+  .is-active & {
+    transition: transform 1s $easeOutCubic, opacity 0.8s;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition-delay: $delay;
+  }
+}
+
+// 画像置換
+@mixin replace($w: 0, $h: 0, $display: block, $position: left) {
+  display: #{$display};
+  overflow: hidden;
+  @if $w != 0 {
+    width: #{$w};
+    height: #{$h};
+  }
+  white-space: nowrap;
+  font-size: 0;
+  text-indent: 100%;
+
+  @if $position == center {
+    margin: auto;
+  }
+}
+
+// 擬似要素
+@mixin pseudo($w: 0, $h: 0, $direction: left, $directionPosition1: 0, $directionPosition2: 0, $directionPosition3: 0, $directionPosition4: 0) {
+  content: '';
+  display: block;
+  position: absolute;
+  margin: auto;
+
+  @if $direction == left {
+    left: #{$directionPosition1};
+    top: #{$directionPosition2};
+    bottom: #{$directionPosition3};
+
+  } @else if $direction == right {
+    right: #{$directionPosition1};
+    top: #{$directionPosition2};
+    bottom: #{$directionPosition3};
+
+  } @else if $direction == center {
+    top: #{$directionPosition1};
+    right: #{$directionPosition2};
+    bottom: #{$directionPosition3};
+    left: #{$directionPosition4};
+  }
+
+  @if $w != 0 {
+    width: #{$w};
+    height: #{$h};
+  }
+}
+
+// media query
+@mixin max-screen($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin min-screen($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen($breakpoint-min, $breakpoint-max) {
+  @media screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up($name) {
+  $min: breakpoint-min($name);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($name) {
+  $max: breakpoint-max($name);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin breakpoint-between($lower, $upper) {
+  $min: breakpoint-min($lower);
+  $max: breakpoint-max($upper);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include breakpoint-up($lower) {
+      @content;
+    }
+  } @else if $min == null {
+    @include breakpoint-down($upper) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-only($name) {
+  $min: breakpoint-min($name);
+  $max: breakpoint-max($name);
+
+  @if $min != null and $max !=null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include breakpoint-up($name) {
+      @content;
+    }
+  } @else if $min == null {
+    @include breakpoint-down($name) {
+      @content;
+    }
+  }
+}

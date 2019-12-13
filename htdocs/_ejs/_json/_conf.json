@@ -1,0 +1,92 @@
+{
+  "top" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/"
+  },
+  "works" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/works/"
+  },
+  "works_detail" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/works_detail/"
+  },
+  "works_keyword" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/works/keyword/"
+  },
+  "method" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/method/"
+  },
+  "method_detail" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/method_detail/"
+  },
+  "news" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/news/"
+  },
+  "news_detail" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/news_detail/"
+  },
+  "contact" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/contact/"
+  },
+  "confirm" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/contact/confirm.html"
+  },
+  "finish" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/contact/finish.html"
+  },
+  "about" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/about/"
+  },
+  "vision" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/vision/"
+  },
+  "simulation" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/simulation/"
+  },
+  "casestudy" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/casestudy/"
+  },
+  "casestudy01" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/casestudy/01.html"
+  },
+  "casestudy02" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/casestudy/02.html"
+  },
+  "faq" : {
+    "title": "＊＊＊＊",
+    "description": "＊＊＊＊",
+    "url": "https://www.chronoba.com/faq/"
+  }
+}

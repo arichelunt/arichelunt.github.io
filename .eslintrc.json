@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "$": false,
+    "jQuery": false,
+    "objectFitImages": false,
+    "TweenMax": false,
+    "TimelineMax": false,
+    "SimpleBar": false,
+    "Waypoint": false,
+    "Power1": false,
+    "Power2": false,
+    "Power3": false,
+    "Power4": false,
+    "google": false
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-console": [
+      "warn"
+    ],
+    "no-unused-vars": [
+      "warn"
+    ]
+  }
+}

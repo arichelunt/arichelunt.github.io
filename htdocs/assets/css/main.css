@@ -1,0 +1,525 @@
+/*
+* main.css
+*
+*/
+/* ------------------------
+  reset
+------------------------ */
+html,
+body {
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+pre,
+textarea {
+  overflow: auto;
+}
+
+[hidden],
+audio:not([controls]),
+template {
+  display: none;
+}
+
+details,
+main,
+summary {
+  display: block;
+}
+
+input[type=number] {
+  width: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+progress {
+  display: inline-block;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline; 
+  font-size: 75%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img {
+  border: 0; 
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  min-height: 1.5em;
+  color: inherit;
+  font-family: inherit; 
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer; 
+
+  -webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0; 
+  border: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,monospace;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+select {
+     -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+fieldset {
+  border: 0;
+}
+
+@font-face {
+  font-family: "YakuHanJP_Noto";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("/assets/fonts/yakuhanjp/YakuHanJP-Regular.woff2") format("woff2"), url("/assets/fonts/yakuhanjp/YakuHanJP-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "YakuHanJP_Noto";
+  font-weight: 700;
+  font-style: normal;
+
+  src: url("/assets/fonts/yakuhanjp/YakuHanJP-Bold.woff2") format("woff2"), url("/assets/fonts/yakuhanjp/YakuHanJP-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@-webkit-keyframes moveLineLeftRight {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+  50% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+  50.0001% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+}
+
+@keyframes moveLineLeftRight {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+  50% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+  50.0001% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+}
+
+@-webkit-keyframes moveLineRightLeft {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50.0001% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+}
+
+@keyframes moveLineRightLeft {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50.0001% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+  }
+}
+
+@-webkit-keyframes moveLineTopBottom {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50.0001% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+  }
+}
+
+@keyframes moveLineTopBottom {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+  }
+  50.0001% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+  }
+}
+
+/* ------------------------
+  Base Settings
+------------------------ */
+html {
+  overflow-y: scroll; 
+  font-size: 1.86667vw;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1121px) {
+  html {
+    font-size: 14px;
+  }
+}
+html.is-drawerOpen {
+  overflow: hidden;
+}
+html:not(.top) {
+  visibility: hidden;
+  opacity: 0;
+}
+html:not(.top).wf-active,
+html:not(.top).loading-delay {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+body {
+  background-color: #fff;
+  letter-spacing: 0.09em; 
+  word-wrap: break-word;
+  color: #000;
+  font-family: "YakuHanJP_Noto", "Noto Sans CJK JP", "Noto Sans JP", sans-serif;
+  line-height: 1.7142;
+
+  -webkit-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit;
+}
+@media (min-width: 768px) {
+  a[href^="tel:"] {
+    cursor: text;
+  }
+}
+[data-whatinput="mouse"] a:focus,
+[data-whatinput="touch"] a:focus {
+  outline: none;
+}
+
+[type="button"] {
+  border: 0;
+  min-height: auto;
+  background-color: transparent;
+}
+[data-whatinput="mouse"] [type="button"]:focus,
+[data-whatinput="touch"] [type="button"]:focus {
+  outline: none;
+}
+
+::-moz-selection {
+  background-color: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* ------------------------
+  utilities Classes
+------------------------ */
+.u-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .u-hidden-sm {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1120.98px) {
+  .u-hidden-md {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1121px) {
+  .u-hidden-lg {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
+.u-visuallyhidden {
+  overflow: hidden;
+  clip: rect(0 0 0 0); 
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.u-visuallyhidden.focusable:active,
+.u-visuallyhidden.focusable:focus {
+  overflow: visible;
+  clip: auto; 
+  position: static;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+.u-invisible {
+  visibility: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ------------------------
+  Print Styles
+------------------------ */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

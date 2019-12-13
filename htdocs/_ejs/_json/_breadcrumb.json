@@ -1,0 +1,241 @@
+{
+  "works": {
+    "text": [
+      "HOME",
+      "実績紹介"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/works/"
+    ]
+  },
+  "works_detail": {
+    "text": [
+      "HOME",
+      "実績紹介",
+      "セントラルキッチンのあるLaboのような卵スイーツ店"
+    ],
+    "directory": [
+      "/",
+      "/works/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/works/",
+      "https://www.chronoba.com/works_detail/"
+    ]
+  },
+  "works_keyword": {
+    "text": [
+      "HOME",
+      "実績紹介",
+      "キーワードで探す"
+    ],
+    "directory": [
+      "/",
+      "/works/",
+      "/keyword/"
+    ],
+    "url": [
+      "https://www.chronoba.com/works/",
+      "https://www.chronoba.com/works/keyword/"
+    ]
+  },
+  "method": {
+    "text": [
+      "HOME",
+      "メソッド"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/method/"
+    ]
+  },
+  "method_detail": {
+    "text": [
+      "HOME",
+      "メソッド",
+      "空間デザインの4要素"
+    ],
+    "directory": [
+      "/",
+      "/method/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/method/",
+      "https://www.chronoba.com/method_detail/"
+    ]
+  },
+  "news": {
+    "text": [
+      "HOME",
+      "ニュース"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/news/"
+    ]
+  },
+  "news_detail": {
+    "text": [
+      "HOME",
+      "ニュース",
+      "6/5(水)下丸子のとんかつ屋さん「ゆめみるこぶた」さんが情報番組ノンストップで紹介されます！"
+    ],
+    "directory": [
+      "/",
+      "/news/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/news/",
+      "https://www.chronoba.com/news_detail/"
+    ]
+  },
+  "contact": {
+    "text": [
+      "HOME",
+      ""
+    ],
+    "directory": [
+      "/",
+      "/contact/"
+    ],
+    "url": [
+      "https://www.chronoba.com/contact/"
+    ]
+  },
+  "confirm": {
+    "text": [
+      "HOME",
+      ""
+    ],
+    "directory": [
+      "/",
+      "/contact/confirm.html"
+    ],
+    "url": [
+      "https://www.chronoba.com/contact/confirm.html"
+    ]
+  },
+  "finish": {
+    "text": [
+      "HOME",
+      ""
+    ],
+    "directory": [
+      "/",
+      "/contact/finish.html"
+    ],
+    "url": [
+      "https://www.chronoba.com/contact/finish.html"
+    ]
+  },
+  "about": {
+    "text": [
+      "HOME",
+      "会社について"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/about/"
+    ]
+  },
+  "vision": {
+    "text": [
+      "HOME",
+      "ビジョン"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/vision/"
+    ]
+  },
+  "simulation": {
+    "text": [
+      "HOME",
+      "見積もりシミュレーション"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/simulation/"
+    ]
+  },
+  "casestudy": {
+    "text": [
+      "HOME",
+      "ケーススタディ"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/casestudy/"
+    ]
+  },
+  "casestudy01": {
+    "text": [
+      "HOME",
+      "ケーススタディ",
+      "商店街にひろがるストーリーを描く"
+    ],
+    "directory": [
+      "/",
+      "/casestudy/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/casestudy/",
+      "https://www.chronoba.com/casestudy/01.html"
+    ]
+  },
+  "casestudy02": {
+    "text": [
+      "HOME",
+      "ケーススタディ",
+      "&ldquo;一流店&rdquo;を一から一緒に創りあげる"
+    ],
+    "directory": [
+      "/",
+      "/casestudy/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/casestudy/",
+      "https://www.chronoba.com/casestudy/02.html"
+    ]
+  },
+  "faq": {
+    "text": [
+      "HOME",
+      "よくある質問"
+    ],
+    "directory": [
+      "/",
+      ""
+    ],
+    "url": [
+      "https://www.chronoba.com/faq/"
+    ]
+  }
+}

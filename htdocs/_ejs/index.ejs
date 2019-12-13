@@ -1,0 +1,38 @@
+<%_  var pageID = 'top'; _%>
+<!doctype html>
+<html lang="ja" class="top">
+  <head>
+    <!-- meta -->
+    <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/js/vendor/slick/slick.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/top.css">
+
+  </head>
+
+  <body class="js-scrollbar-fix">
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID, current: ''})%>
+
+    <main class="top">
+      <div class="p-content">
+        <h2 class="p-content__title">12月</h2>
+        <ul class="p-content__list">
+          <li class="p-content__item"><a href="_days/_month_12/days_15.html" class="p-content__link">days</a></li>
+        </ul>
+      </div>
+    </main>
+
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <!-- lib -->
+    <%- include(relativePath + '_partials/_lib')%>
+    <script src="/assets/js/vendor/slick/slick.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/top.js"></script>
+  </body>
+</html>

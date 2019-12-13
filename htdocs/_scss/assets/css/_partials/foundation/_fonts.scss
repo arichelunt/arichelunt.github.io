@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'YakuHanJP_Noto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/yakuhanjp/YakuHanJP-Regular.woff2') format('woff2'),
+       url('/assets/fonts/yakuhanjp/YakuHanJP-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YakuHanJP_Noto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/yakuhanjp/YakuHanJP-Bold.woff2') format('woff2'),
+       url('/assets/fonts/yakuhanjp/YakuHanJP-Bold.woff') format('woff');
+  font-display: swap;
+}
