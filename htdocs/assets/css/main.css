@@ -428,6 +428,22 @@ a {
   text-shadow: none;
 }
 
+.l-inner {
+  margin: auto; 
+  max-width: 1000px;
+}
+
+.top {
+  margin-top: 100px;
+}
+.top .p-content__title {
+  font-size: 2rem;
+}
+.top .p-content__link {
+  display: block;
+  margin-left: 100px;
+}
+
 /* ------------------------
   utilities Classes
 ------------------------ */
