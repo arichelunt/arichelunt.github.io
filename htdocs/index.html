@@ -16,30 +16,27 @@
   <link rel="stylesheet" href="assets/css/top.css">
 </head>
 
-<body class="js-scrollbar-fix">
+<body>
 
   <!-- header -->
   <header class="l-header -top js-scrollbar-fix">
     <h2 class="header__title">備忘録</h2>
   </header>
-  <main class="top">
-    <div class="l-inner">
-      <div class="p-content">
-        <h2 class="p-content__title">12月</h2>
-        <ul class="p-content__list">
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-          <li class="p-content__item"><a href="_days/_month_12/12/" class="p-content__link">16日</a></li>
-        </ul>
+  <main>
+    <section class="toDo">
+      <h2 class="toDo_title">toDoリスト練習</h2>
+      <form class="toDo_wrap"><input id="mydata_in" class="toDo_text" name="mydata_in" type="text" value=""> <input class="toDo_submit" type="submit" value="追加">
+        <ul class="toDo_list"></ul>
+      </form>
+    </section>
+    <div class="container"><button type="button" class="m-btn js-openBtn">開く</button>
+      <div class="m-modal">
+        <div class="m-modal_mask"></div>
+        <div class="m-modal_inner">
+          <div class="m-modal_box">
+            <p class="m-modal_txt">モーダルが開きました。<br>これで基本的なモーダルの作成は完了です。<br>しかし、モーダルの仕様や実装する環境によって実装方法が異なる場合があります。<br>状況に応じて適切なモーダルを実装しましょう。</p><button type="button" class="m-modal_btn js-closeBtn">閉じる</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -49,13 +46,7 @@
 
   <!-- lib -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.3.1.min.js"><\/script>')
-  </script>
-  <script src="/assets/js/vendor/svgxuse.js"></script>
-  <script src="/assets/js/vendor/what-input.min.js"></script>
-  <script src="/assets/js/vendor/slick/slick.min.js"></script>
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/top.js"></script>
+  <script src="/js/top.js"></script>
 </body>
 </html>

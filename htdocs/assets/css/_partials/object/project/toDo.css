@@ -1,0 +1,97 @@
+.toDo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 80%; 
+
+  -webkit-box-pack: center; 
+
+      -ms-flex-pack: center; 
+
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.toDo .toDo_title {
+  padding: 14px;
+  border-radius: 6px; 
+  width: 80%;
+  background-color: #888;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 7px 8px 20px -9px #161916;
+          box-shadow: 7px 8px 20px -9px #161916;
+  font-size: 33px;
+}
+
+.toDo_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  padding: 45px;
+  border-radius: 6px; 
+  width: 80%;
+  -webkit-box-shadow: 7px 8px 20px -9px #161916;
+          box-shadow: 7px 8px 20px -9px #161916;
+
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+}
+
+input[type="text"] {
+  border: none; 
+  width: 60%;
+  height: 35px;
+  background-color: #ddd;
+  color: #aaa;
+}
+
+.toDo_submit {
+  margin: 0 9.7%;
+  outline: none; 
+  width: 20%;
+  height: 35px;
+  background-color: #999;
+  color: #fff;
+}
+
+.toDo_list {
+  margin-top: 55px;
+  padding: 0 20px; 
+  width: 100%;
+}
+.toDo_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px; 
+
+  -webkit-box-pack: justify; 
+
+      -ms-flex-pack: justify; 
+
+          justify-content: space-between;
+}
+.toDo_list li:first-of-type {
+  margin: 0;
+}
+.toDo_list li p {
+  display: inline-block;
+  border-bottom: 3px solid #555;
+}
+
+.toDo_delete {
+  border: none; 
+  border-radius: 25%;
+  width: 25px;
+  height: 25px;
+  background-color: #888;
+}
